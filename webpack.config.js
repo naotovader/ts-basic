@@ -1,18 +1,18 @@
 const path = require('path');
 module.exports = {
     entry: {
-        bandle: './src/index.ts'
+        bundle: './src/index.ts'
     },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js'
     },
     resolve: {
-        extention: ['.js', '.ts']
+        extensions: ['.ts', '.js']
     },
-    devserver: {
+    devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        open: ture
+        open: true
     },
     module: {
         rules: [
